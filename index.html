@@ -79,24 +79,6 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop controls playsinline height="100%">
-        <source src="./static/videos/Demo-v5.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-left">
-        We present a novel Deep Reinforcement Learning-based controller capable of robust bicycle balancing and steering. Our video highlights the controller's performance through extensive validation, from large-scale simulation on flat and complex terrains to challenging real-world deployments, including crossing speed bumps and long-duration tests.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-
-
-
 <section class="section">
   <div class="container is-max-desktop">
     <!-- Abstract. -->
@@ -105,7 +87,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Autonomous bicycle control represents a challenging problem in underactuated nonlinear systems, requiring precise lateral balance and steering coordination under dynamic conditions. To address the limitations of traditional model-based approaches in parameter sensitivity and computational complexity, this paper presents a comprehensive deep reinforcement learning framework for robust lateral neural control of autonomous bicycles. Our approach eliminates the need for explicit dynamic modeling by training end-to-end neural policies through Proximal Policy Optimization (PPO) in high-fidelity NVIDIA Isaac Sim environments. The framework incorporates a carefully designed multi-objective reward function that simultaneously optimizes balance maintenance, velocity tracking, and steering precision. Systematic domain randomization strategies are implemented to bridge the simulation-to-reality gap, enabling successful transfer to hardware implementation with robust performance across diverse operational conditions. These results establish deep reinforcement learning as a viable paradigm for practical autonomous bicycle control, offering superior adaptability and robustness compared to traditional approaches. Video demonstrations of the proposed system can be available \href{https://github.com/Scale12138}{here}.
+            Autonomous bicycle control represents a challenging problem in underactuated nonlinear systems, requiring precise lateral balance and steering coordination under dynamic conditions. To address the limitations of traditional model-based approaches in parameter sensitivity and computational complexity, this paper presents a comprehensive deep reinforcement learning framework for robust lateral neural control of autonomous bicycles. Our approach eliminates the need for explicit dynamic modeling by training end-to-end neural policies through Proximal Policy Optimization (PPO) in high-fidelity NVIDIA Isaac Sim environments. The framework incorporates a carefully designed multi-objective reward function that simultaneously optimizes balance maintenance, velocity tracking, and steering precision. Systematic domain randomization strategies are implemented to bridge the simulation-to-reality gap, enabling successful transfer to hardware implementation with robust performance across diverse operational conditions. These results establish deep reinforcement learning as a viable paradigm for practical autonomous bicycle control, offering superior adaptability and robustness compared to traditional approaches. Video demonstrations of the proposed system can be available here.
           </p>
         </div>
       </div>
@@ -113,22 +95,20 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <!--
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <!-- Using your demo video instead of YouTube iframe -->
-          <!--
-          <video controls autoplay muted loop playsinline style="width: 100%; height: auto;">
-            <source src="./static/videos/Demo-v4.mp4" type="video/mp4">
+          <video id="teaser" autoplay muted loop controls playsinline style="width: 100%; height: auto;">
+            <source src="./static/videos/Demo-v5.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          -->
+          <h2 class="subtitle has-text-left">
+            We present a novel Deep Reinforcement Learning-based controller capable of robust bicycle balancing and steering. Our video highlights the controller's performance through extensive validation, from large-scale simulation on flat and complex terrains to challenging real-world deployments, including crossing speed bumps and long-duration tests.
+          </h2>
         </div>
       </div>
     </div>
-    -->
     <!--/ Paper video. -->
   </div>
 </section>

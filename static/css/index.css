@@ -7,8 +7,24 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  margin-top: 0;
+  padding-top: 0;
 }
 
+.hero {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hero .hero-body {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 .footer .icon-link {
     font-size: 25px;
