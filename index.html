@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="CycleRL: Sim-to-Real Deep Reinforcement Learning for Robust Autonomous Bicycle Control">
+  <meta name="keywords" content="Deep reinforcement learning, autonomous bicycle control, sim-to-real transfer, domain randomization, underactuated systems, lateral control">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CycleRL: Sim-to-Real Deep Reinforcement Learning for Robust Autonomous Bicycle Control</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/CPNT.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">CycleRL: Sim-to-Real Deep Reinforcement Learning for Robust Autonomous Bicycle Control</h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Authors -->
+            <span class="author-block">
+              Gelu Liu<sup>1</sup>,</span>
+            <span class="author-block">
+              Zhijie Wu<sup>1</sup>,</span>
+            <span class="author-block">
+              Junliang Wu<sup>1</sup>,</span>
+            <span class="author-block">
+              Teng Wang<sup>1</sup>,</span>
+            <span class="author-block">
+              Songyuan Li<sup>1</sup>,</span>
+            <span class="author-block">
+              Xiangwei Zhu<sup>1,*</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <!-- Affiliations -->
+            <span class="author-block"><sup>1</sup>Sun Yat-sen University,</span>
+            <span class="author-block"><sup>*</sup>Corresponding author</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/Demo-v5.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-left">
+        We present a novel Deep Reinforcement Learning-based controller capable of robust bicycle balancing and steering. Our video highlights the controller's performance through extensive validation, from large-scale simulation on flat and complex terrains to challenging real-world deployments, including crossing speed bumps and long-duration tests.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Autonomous bicycle control represents a challenging problem in underactuated nonlinear systems, requiring precise lateral balance and steering coordination under dynamic conditions. To address the limitations of traditional model-based approaches in parameter sensitivity and computational complexity, this paper presents a comprehensive deep reinforcement learning framework for robust lateral neural control of autonomous bicycles. Our approach eliminates the need for explicit dynamic modeling by training end-to-end neural policies through Proximal Policy Optimization (PPO) in high-fidelity NVIDIA Isaac Sim environments. The framework incorporates a carefully designed multi-objective reward function that simultaneously optimizes balance maintenance, velocity tracking, and steering precision. Systematic domain randomization strategies are implemented to bridge the simulation-to-reality gap, enabling successful transfer to hardware implementation with robust performance across diverse operational conditions. These results establish deep reinforcement learning as a viable paradigm for practical autonomous bicycle control, offering superior adaptability and robustness compared to traditional approaches. Video demonstrations of the proposed system can be available \href{https://github.com/Scale12138}{here}.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!--
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <!-- Using your demo video instead of YouTube iframe -->
+          <!--
+          <video controls autoplay muted loop playsinline style="width: 100%; height: auto;">
+            <source src="./static/videos/Demo-v4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          -->
+        </div>
+      </div>
+    </div>
+    -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<!-- Add your own sections here if needed -->
+    <!-- For example: -->
+    <!--
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Describe your method here.
+          </p>
+        </div>
+      </div>
+    </div>
+    -->
+
+    <!--
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+        <div class="content has-text-justified">
+          <p>
+            Describe your results here.
+          </p>
+        </div>
+      </div>
+    </div>
+    -->
+
+  </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{liu2024cyclerl,
+  author    = {Liu, Gelu and Wu, Zhijie and Wu, Junliang and Wang, Teng and Li, Songyuan and Zhu, Xiangwei},
+  title     = {CycleRL: Sim-to-Real Deep Reinforcement Learning for Robust Autonomous Bicycle Control},
+  journal   = {arXiv preprint arXiv:24xx.xxxx},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section> -->
+
+
+<!-- 
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./main.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/your-repo" class="external-link">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the source code of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+
+</body>
+</html>
