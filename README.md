@@ -1,6 +1,6 @@
 # Nerfies
 
-This is the repository that contains source code for the [CycleRL website](https://CycleRL.github.io).
+This is the repository that contains source code for the [CycleRL website](https://scale12138.github.io/CycleRL/).
 
 
 
