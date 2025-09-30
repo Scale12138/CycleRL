@@ -87,7 +87,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Autonomous bicycle control represents a challenging problem in underactuated nonlinear systems, requiring precise lateral balance and steering coordination under dynamic conditions. To address the limitations of traditional model-based approaches in parameter sensitivity and computational complexity, this paper presents a comprehensive deep reinforcement learning framework for robust lateral neural control of autonomous bicycles. Our approach eliminates the need for explicit dynamic modeling by training end-to-end neural policies through Proximal Policy Optimization (PPO) in high-fidelity NVIDIA Isaac Sim environments. The framework incorporates a carefully designed multi-objective reward function that simultaneously optimizes balance maintenance, velocity tracking, and steering precision. Systematic domain randomization strategies are implemented to bridge the simulation-to-reality gap, enabling successful transfer to hardware implementation with robust performance across diverse operational conditions. These results establish deep reinforcement learning as a viable paradigm for practical autonomous bicycle control, offering superior adaptability and robustness compared to traditional approaches. Video demonstrations of the proposed system can be available here.
+            Autonomous bicycle control represents a challenging problem in underactuated nonlinear systems, requiring precise lateral balance and steering coordination under dynamic conditions. To address the limitations of traditional model-based approaches in parameter sensitivity and computational complexity, this paper presents a comprehensive deep reinforcement learning framework for robust lateral neural control of autonomous bicycles. Our approach eliminates the need for explicit dynamic modeling by training end-to-end neural policies through Proximal Policy Optimization (PPO) in high-fidelity NVIDIA Isaac Sim environments. The framework incorporates a carefully designed multi-objective reward function that simultaneously optimizes balance maintenance, velocity tracking, and steering precision. Systematic domain randomization strategies are implemented to bridge the simulation-to-reality gap, enabling successful transfer to hardware implementation with robust performance across diverse operational conditions. These results establish deep reinforcement learning as a viable paradigm for practical autonomous bicycle control, offering superior adaptability and robustness compared to traditional approaches. Video demonstrations of the proposed system can be available at https://scale12138.github.io/CycleRL/.
           </p>
         </div>
       </div>
@@ -114,33 +114,31 @@
 </section>
 
 
-<!-- Add your own sections here if needed -->
-    <!-- For example: -->
-    <!--
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Method</h2>
+<!-- Conclusion. -->
+<!--
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Conclusion</h2>
         <div class="content has-text-justified">
           <p>
-            Describe your method here.
+            This work presented a deep reinforcement learning framework for the robust lateral control of an autonomous bicycle. By training an end-to-end policy, our model-free approach successfully navigates the vehicle's complex, underactuated dynamics, outperforming traditional model-based controllers while bypassing the need for explicit system identification.
+          </p>
+          <p>
+            Our key contributions include a multi-objective reward function that balances stability with tracking objectives, and a comprehensive domain randomization strategy, which proved crucial for bridging the reality gap, enabling successful zero-shot sim-to-real transfer of the learned policy. Extensive real-world experiments validated the controller's robustness across diverse operating conditions, confirming its practical viability for autonomous cycling applications, as illustrated in https://scale12138.github.io/CycleRL/.
+          </p>
+          <p>
+            Future work will focus on extending this framework to include vision-based navigation and multi-agent coordination. The success of our approach demonstrates the potential of model-free DRL for developing robust and intelligent mobility systems, contributing to the future of sustainable urban transportation.
           </p>
         </div>
       </div>
     </div>
-    -->
+  </div>
+</section>
+-->
+<!--/ Conclusion. -->
 
-    <!--
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
-        <div class="content has-text-justified">
-          <p>
-            Describe your results here.
-          </p>
-        </div>
-      </div>
-    </div>
-    -->
 
   </div>
 </section>

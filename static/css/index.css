@@ -121,6 +121,7 @@ body {
 
     overflow: hidden;
     border-radius: 10px !important;
+    margin-bottom: 3rem;
 }
 
 .publication-video iframe {
